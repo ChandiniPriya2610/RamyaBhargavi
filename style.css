@@ -3,20 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #4a90e2, #ffffff);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.search-bar {
+.header {
+    text-align: center;
     margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     position: sticky;
     top: 0;
     background: rgba(255, 255, 255, 0.8);
@@ -43,20 +58,7 @@ body {
 }
 
 .search-bar button:hover {
-
     background: #29bfda;
-}
-.search-bar {
-    margin-top: 20px;  /* Adjust this margin if necessary */
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 1000;
 }
 
 .container {
@@ -69,7 +71,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     animation: fadeIn 1.5s ease-in-out;
-    margin-top: 80px; /* Increase margin-top for more space between the search bar and box */
+    margin-top: 50px; /* Adjusted for spacing after the search bar */
 }
 
 .icon img {
